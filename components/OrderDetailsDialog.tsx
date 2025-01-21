@@ -9,7 +9,6 @@ import {
   TableRow,
 } from "./ui/table";
 import PriceFormatter from "./PriceFormatter";
-import { MY_ORDERS_QUERYResult } from "@/sanity.types";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 
@@ -17,7 +16,13 @@ interface Product {
   _id: string;
   name: string;
   price: number;
-  image: any; // Sanity image type
+  image: {
+    asset: {
+      _ref: string;
+      _type: string;
+    };
+    _type: string;
+  }; // Replace 'any' with Sanity image type
 }
 
 interface OrderProduct {
