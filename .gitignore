@@ -1,0 +1,41 @@
+# .env files (environment variables should not be tracked)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Next.js build output directory
+.next/
+
+# Node.js modules (can be reinstalled using package manager)
+node_modules/
+
+# Logs and temporary files
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# VS Code settings
+.vscode/
+
+# Operating system files
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Local IDE files or other temp files
+.idea/
+
+# Jest coverage reports
+coverage/
+
+# Package manager lock files (only if you want to ignore them)
+# npm
+package-lock.json
+# yarn
+yarn.lock
+# pnpm
+pnpm-lock.yaml
